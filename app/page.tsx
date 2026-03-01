@@ -1,11 +1,8 @@
-import Header from '@/components/Header';
-
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">
 
-      {/* HEADER — Maintenant c'est le composant réutilisable */}
-      <Header />
+      
 
       {/* HERO */}
       <section className="bg-green-700 text-white py-20 px-6 text-center">
@@ -56,18 +53,12 @@ export default function Home() {
             <div>
               <p className="font-semibold text-green-800 mb-1">🕐 Horaires</p>
               <p>Mardi et Vendredi</p>
-              <p>8h–12h / 13h30–17h30</p>
+              <p>8h-12h / 13h30-17h30</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-green-900 text-green-200 text-center text-sm py-6">
-        <p>© 2025 Commune de Valojoulx · Tous droits réservés</p>
-        <p className="mt-1">contact@mairievalojoulx.fr</p>
-      </footer>
-
-    </main>
+    </div>
   );
 }
